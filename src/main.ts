@@ -27,7 +27,7 @@ const createWindow = () => {
     show: true,
     backgroundColor: 'hsl(180, 80%, 58%)'
   });
-
+  mainWindow.webContents.openDevTools();
   // and load the index.html of the app.
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
     mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
