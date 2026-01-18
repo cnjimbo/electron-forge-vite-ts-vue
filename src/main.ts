@@ -15,16 +15,16 @@ const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     opacity: 1,
-    width: 600,
-    height: 360,
+    width: 1024,
+    height: 900,
     center: true,
-    resizable: false,
-    autoHideMenuBar : true,
+    resizable: true,
+    autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
     // have no visual flash (1)
-    show: false,
+    show: true,
     backgroundColor: 'hsl(180, 80%, 58%)'
   });
 
